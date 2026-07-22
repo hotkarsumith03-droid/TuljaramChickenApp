@@ -5,8 +5,8 @@ import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/use-color-scheme";
 
-import { CartProvider } from "../context/CartContext";
 import { AuthProvider } from "../context/AuthContext";
+import { CartProvider } from "../context/CartContext";
 import { OrderProvider } from "../context/OrderContext";
 
 export default function RootLayout() {

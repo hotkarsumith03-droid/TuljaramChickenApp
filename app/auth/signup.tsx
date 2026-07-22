@@ -58,10 +58,14 @@ export default function SignupScreen() {
       <TouchableOpacity style={styles.button} onPress={handleSignup}>
         <Text style={styles.buttonText}>Sign Up</Text>
       </TouchableOpacity>
-
-      <TouchableOpacity onPress={() => router.back()}>
-        <Text style={styles.link}>Already have an account? Login</Text>
-      </TouchableOpacity>
+<TouchableOpacity
+  onPress={() => router.replace("/auth/login")}
+>
+  <Text style={styles.link}>
+    Already have an account? Login
+  </Text>
+</TouchableOpacity>
+      
     </View>
   );
 }
